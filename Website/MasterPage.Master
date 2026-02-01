@@ -1,0 +1,42 @@
+<%@ Master Language="C#" AutoEventWireup="True"
+    CodeBehind="MasterPage.Master.cs"
+    Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Math</title>
+    <link rel="stylesheet" href="css/master.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+
+<body>
+<form id="form1" runat="server">
+
+<div>
+    Hello:
+    <asp:Label ID="lblUser" runat="server" />
+    |
+    <asp:Button ID="btnLogout" runat="server"
+        Text="Logout"
+        OnClick="btnLogout_Click" />
+</div>
+
+<div>
+    <a runat="server" id="lnkMain" href="/Default.aspx">Main</a>
+    <a runat="server" id="lnkInfo" href="/About.aspx">Info</a>
+    <a runat="server" id="lnkRegister" href="/Auth/Register.aspx">Register</a>
+    <a runat="server" id="lnkLogin" href="/Auth/Login.aspx">Login</a>
+    <a runat="server" id="lnkAccount" href="/ContentPages/Account.aspx">Account</a>
+    <a runat="server" id="lnkFriends" href="/ContentPages/Friends.aspx">Friends</a>
+    <a runat="server" id="lnkTeacher" href="/ContentPages/Teacher.aspx">Teacher</a>
+</div>
+
+<div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+</div>
+
+</form>
+</body>
+</html>
+
