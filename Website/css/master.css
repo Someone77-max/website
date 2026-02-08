@@ -3,6 +3,7 @@ body {
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    background-color: pink;
 }
 
 h1 {
@@ -24,9 +25,34 @@ input[type="submit"], input[type="reset"], button {
 a {
     color: #007BFF;
     text-decoration: none;
+    padding: 1px 6px;
+    border: 1px outset;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    width: 75px;
+}
+
+.sidebar {
+    display: flex;
+    height: 100vh;
+    flex-flow: column;
+    background-color: turquoise;
+}
+
+.wholeSite {
+    display: flex;
+    flex-flow: row;
 }
 
