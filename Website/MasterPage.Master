@@ -13,16 +13,17 @@
 <body>
 <form id="form1" runat="server">
 
+<div class="wholeSite">
+<div class="sidebar">
 <div>
-    Hello:
+    Hello
     <asp:Label ID="lblUser" runat="server" />
-    |
     <asp:Button ID="btnLogout" runat="server"
         Text="Logout"
         OnClick="btnLogout_Click" />
 </div>
 
-<div>
+<div class="navbar">
     <a runat="server" id="lnkMain" href="/Default.aspx">Main</a>
     <a runat="server" id="lnkInfo" href="/About.aspx">Info</a>
     <a runat="server" id="lnkRegister" href="/Auth/Register.aspx">Register</a>
@@ -31,9 +32,11 @@
     <a runat="server" id="lnkFriends" href="/ContentPages/Friends.aspx">Friends</a>
     <a runat="server" id="lnkTeacher" href="/ContentPages/Teacher.aspx">Teacher</a>
 </div>
+</div>
 
 <div>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+</div>
 </div>
 
 </form>
